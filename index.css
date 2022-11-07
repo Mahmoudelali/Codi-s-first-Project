@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.project-description {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background: #eee     ;
+    color: white;
+}
+.container {
+    display: grid;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.samples{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    gap: 20px;
+}
+.samples > div {
+    position: relative;
+    /* border: 2px solid black; */
+    padding: .5rem;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.samples > div h2 {
+
+    font-size: 14px;
+}
+.samples > div p {
+    font-size: 12px;
+    font-weight: 500;
+}
+.sample {
+    position: relative;
+    color: black;
+    transition: .3s;
+    max-height: 150px;
+    padding-left: 10%;
+}
+
+.sample:hover{
+    box-shadow: 2px 2px 20px rgb(35, 24, 24)
+} 
+.sample img{
+    width :50px ;
+    height: auto;
+    border-bottom-left-radius: 10px ;
+    background: transparent;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    translate: (-20px , -20px);
+    margin-right: 10px;
+}
+.sample h2 , .sample p {
+    font-weight: 700;
+    width: 70%;
+}
+.sample {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.4) ;
+    backdrop-filter: blur(5px);
+}
+
+/* img on top */
+.img-on-top {
+    z-index: -1;
+    height: 70vh;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url('/img/global\ warming.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.img-on-top::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* number Container */
+.number-container {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #f06520;
+    -webkit-text-stroke: #f06520;
+    /* background-color: rgba(255, 255, 255, 0.21); */
+    background-color: white       ;
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    color: white;
+}
