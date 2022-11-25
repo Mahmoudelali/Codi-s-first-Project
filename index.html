@@ -4,62 +4,286 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="/index.css" />
+        <title>WASTE SORTING</title>
+        <link rel="stylesheet" href="index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="/newone.js" defer></script>
     </head>
     <body>
-        <div class="img-on-top">
+        <!-- background image -->
+        <div class="img-on-top"></div>
+
+        <!-- Scroll to top -->
+
+        <a href="#" class="scroll-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
+        <!-- header  -->
+        <div class="header">
+            <h1><a class="brand" href="#"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="hover-eff">Home</a></li>
+                    <li><a href="#about" class="hover-eff">About</a></li>
+                    <li><a href="#events" class="hover-eff">Events</a></li>
+
+                    <li><a href="#about" class="hover-eff">Contact</a></li>
+                    <li><a href="#howTo" class="hover-eff">How To</a></li>
+                </ul>
+            </nav>
         </div>
+
         <div class="app">
-            <h1>Earth is dying , don't be a contributor , join Now</h1>
-            <div class="container">
-                <h2 class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Obcaecati hic quidem!
-                </h2>
-                <div class="samples">
-                    <div class="sample">
-                        <div class="number-container">1</div>
-                        <img src="./img/backgroundRemoved.png"  alt="recycling station">
-                        <h2>Sort your Trash </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Eum eaque libero praesentium nisi maiores!
-                            Eligendi.
-                        </p>
-                    </div>
-                    <div class="sample">
-                        <div class="number-container">2</div>
-                        <img src="./img/call-removebg-preview.png" alt="make the call img " >
-                        <h2>Give us a call.</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Eum eaque libero praesentium nisi maiores!
-                            Eligendi.
-                        </p>
-                    </div>
-                    <div class="sample">
-                        <div class="number-container">3</div>
-                        <img src="./img/get_paid-removebg-preview.png" alt="">
-                        <h2>Get Paid.</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Eum eaque libero praesentium nisi maiores!
-                            Eligendi.
-                        </p>
-                    </div>
-                    <div class="sample">
-                        <div class="number-container">4</div>
-                        <img src="./img/175-1752707_recycling-earth-download-transparent-png-image-plastic-recycling-removebg-preview.png" alt="">
-                        <h2>Become a contributor to save the earth</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Eum eaque libero praesentium nisi maiores!
-                            Eligendi.
-                        </p>
+            <section>
+                <div>
+                    <h1>Earth is dying,don't be a contributor,join Now!</h1>
+                    <h2 class="project-description"></h2>
+                </div>
+
+                <input
+                    placeholder="Join Our Email news letter !"
+                    type="email"
+                    name="user-email"
+                    id="email"
+                />
+            </section>
+            <!--"how to" section - 2nd Section  -->
+            <section id="howTo">
+                <div class="container">
+                    <div class="samples">
+                        <div class="sample">
+                            <div class="number-container">1</div>
+                            <img
+                                src="./img/backgroundRemoved.png"
+                                alt="recycling station"
+                            />
+                            <h2>Sort your Trash.</h2>
+
+                            <p>
+                                Nowadays,sending all our trash to landfill is
+                                not sustainable. We're more conscious of
+                                separating and recycling organic waste in order
+                                to counter our environmental impact. You need to
+                                locate a place for sort your waste.
+                            </p>
+                        </div>
+                        <div class="sample">
+                            <div class="number-container">2</div>
+                            <img
+                                src="./img/call-removebg-preview.png"
+                                alt="make the call img "
+                            />
+                            <h2>Give us a call.</h2>
+                            <p>
+                                Anyone who's interested in spreading awareness
+                                and expanding this event with for sorting and
+                                joining us, just send a message to our e-mail or
+                                make a call to register.
+                            </p>
+                        </div>
+                        <div class="sample">
+                            <div class="number-container">3</div>
+                            <img
+                                src="./img/get_paid-removebg-preview.png"
+                                alt=""
+                            />
+                            <h2>Get Paid.</h2>
+                            <p>
+                                Instead of randomly throwing waste, we developed
+                                a plan to save the environment by sorting
+                                materials by deciding to create a campaign to
+                                sort materials calls "SORT AND WIN !"
+                                specifically for young people in solidarity with
+                                Codi by collecting 10 KG of plastic to earn a
+                                grocery voucher.
+                            </p>
+                        </div>
+                        <div class="sample">
+                            <div class="number-container">4</div>
+                            <img
+                                src="./img/175-1752707_recycling-earth-download-transparent-png-image-plastic-recycling-removebg-preview.png"
+                                alt=""
+                            />
+                            <h2>Become a contributor to save the earth.</h2>
+                            <p>
+                                It's not too late for doing the right, each one
+                                of us is responsible.Sorting is the best
+                                solution to prevent any risk can be reason for
+                                pollution.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- Poster section -->
+            <section id="events">
+                <div>
+                    <div class="event-description">
+                        <h2>Codi's Sort To Win Event</h2>
+                        <p>
+                            Our mission as Codi's team, allowing students to set
+                            up initiatives of their own choosing.They decided to
+                            be a part of community with you especially in this
+                            event so, let's save the earth.
+                        </p>
+                    </div>
+                    <div class="poster-container">
+                        <img
+                            src="https://cdn.discordapp.com/attachments/1038047866985398333/1039933207883284560/IMG-20221109-WA0104-2.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+            <!-- causes section -->
+            <section>
+                <h2 style="text-align: center">Why are we here</h2>
+                <p>
+                    since global warming has upraised , and enviromental
+                    consequences has started to show , someone had to take an
+                    action
+                </p>
+                <p>here's more evidences about why our job is important !</p>
+
+                <div class="articles-container">
+                    <div>
+                        <ol>
+                            <li>
+                                Protects Ecosystems and Wildlife
+                                <p>
+                                    When we recycle, we lessen disruption to the
+                                    natural world. When we cut down fewer trees
+                                    and forests,we are preventing harm to
+                                    animals.By reducing disruption and damage to
+                                    the natural world, we help preserve
+                                    ecosystems and wildlife.
+                                </p>
+                            </li>
+                            <li>
+                                Conserves Our Natural Resources
+                                <p>
+                                    Some of the world’s natural resources are in
+                                    short supply, and when we recycle, we help
+                                    conserve these natural resources. When we
+                                    recycle paper, we save forests and trees.
+                                    When we recycle plastic, it takes up a lot
+                                    of solid waste and can take centuries to
+                                    break down.In addition to this, most plastic
+                                    comes from fossil fuel hydrocarbons.
+                                </p>
+                            </li>
+                            <li>
+                                Saves Energy Making products from recycled
+                                materials
+                                <p>
+                                    requires less energy than making them from
+                                    new, raw materials.It takes much less energy
+                                    to make products out of recycled materials
+                                    than from raw materials.For example,
+                                    recycling one glass bottle saves enough
+                                    power to light a 100-watt light bulb for
+                                    four hours.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>
+                                Reduces the Need to Harvest New Materials
+                                <p>
+                                    When we recycle, it reduces our need to
+                                    harvest raw materials. Our increasing demand
+                                    for these raw materialsalso displaces people
+                                    who live near forests or around river
+                                    systems. When we recycle, we reduce the
+                                    possibility of damaging someone else’s land
+                                    or community.
+                                </p>
+                            </li>
+                            <li>
+                                Reduces Carbon Emissions
+                                <p>
+                                    Recycling takes up less energy, which
+                                    reduces our carbon footprint and emissions.
+                                    Reducing our carbon footprint helps minimize
+                                    methane-release waste from landfill sites,
+                                    which contributes to climate change.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Sample -->
+            <footer id="about">
+                <div>
+                    <h2>created by</h2>
+                    <h3>Mahmoud elali</h3>
+                    <h3>yassmin hannouf</h3>
+                    <h3>moemen haydar</h3>
+                    <h3>abdellatif el Kerdy</h3>
+                    <h3>ahmad el halabi</h3>
+                </div>
+
+                <div class="subscribe">
+                    <h2>Subscribe To our NewsLetter</h2>
+                    <input
+                        type="text"
+                        name="email"
+                        placeholder="enter Your email"
+                        id="subs-email"
+                    />
+                </div>
+
+                <div class="icons">
+                    <h2>Contact us on:</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Suscipit, quas. Lorem ipsum dolor sit amet.
+                    </p>
+                    <div
+                        style="
+                            text-align: center;
+                            padding-bottom: 5em;
+                            margin-top: 20px;
+                        "
+                    >
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <i
+                            title="call us on: 06******"
+                            class="fab fa-whatsapp"
+                        ></i>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="./img/Untitled-1.png"
+                        width="100px"
+                        id="qrcode"
+                        alt=""
+                    />
+                    <h3>
+                        Powered By
+                        <a href="https://codi.tech/">Codi tech</a>
+                    </h3>
+                </div>
+            </footer>
+            <!-- Footer  Section  -->
         </div>
     </body>
 </html>
